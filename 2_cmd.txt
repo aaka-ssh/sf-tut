@@ -1,0 +1,7 @@
+# Build the Docker image
+docker build -t mlflow-snowpark .
+
+# Run the Docker container
+docker run -p 5000:5000 mlflow-snowpark
+
+Once the container is running, you can access the MLflow UI at http://localhost:5000. From there, you can log in to your Snowflake account and start using MLflow with Snowpark.
